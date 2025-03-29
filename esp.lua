@@ -118,7 +118,7 @@ local espLibrary = {
   local workspace = getService(game, "Workspace");
   local runService = getService(game, "RunService");
   local players = getService(game, "Players");
-  local coreGui = getService(game, "CoreGui");
+  local coreGui = cloneref(game:GetService("CoreGui")) or game:GetService("CoreGui");
   local userInputService = getService(game, "UserInputService");
   
   -- cache
