@@ -6,11 +6,6 @@ local RunService = cloneref(game:GetService("RunService")) or game:GetService("R
 local PlayerService = cloneref(game:GetService("Players")) or game:GetService("Players")
 local CoreGui = cloneref(game:GetService("CoreGui")) or game:GetService("CoreGui")
 
-if game.PlaceId == 12673840215 then 
-game:GetService("Players").LocalPlayer:Kick("Pulse.GG - RHT Version is currently detected")
-return wait(9e9)
-end	
-
 local GuiInset = GuiService:GetGuiInset()
 local LocalPlayer = PlayerService.LocalPlayer
 
