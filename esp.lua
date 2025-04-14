@@ -12,6 +12,7 @@ local espLibrary = {
     chamsCache = {},
     objectCache = {},
     conns = {},
+    targettingwhitelist = {},
     whitelist = {}, -- insert string that is the player's name you want to whitelist (turns esp color to whitelistColor in options)
     blacklist = {}, -- insert string that is the player's name you want to blacklist (removes player from esp)
     options = {
@@ -521,7 +522,7 @@ local espLibrary = {
                     color = self.options.fillColor;
                 end
   
-                if (find(self.whitelist, player.Name)) then
+                if (find(self.whitelist, player.Name)) or (find(self.targettingwhitelist, player.Name)) then
                     color = self.options.whitelistColor;
                 end
   
@@ -684,7 +685,7 @@ local espLibrary = {
                     color = self.options.fillColor;
                 end
   
-                if (find(self.whitelist, player.Name)) then
+                if (find(self.whitelist, player.Name)) or (find(self.targettingwhitelist, player.Name)) then
                     color = self.options.whitelistColor;
                 end
   
