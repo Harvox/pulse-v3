@@ -1,10 +1,3 @@
---[[
-THIS IS A PUBLIC ESP LIBARY I FOUND ON GITHUB!!!!
-https://github.com/UniversalPlug/ui/blob/main/esp3
-]]
-
-
-
 
 local espLibrary = {
     instances = {},
